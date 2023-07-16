@@ -52,6 +52,10 @@ function makeSound(val) {
 
 function addAnimation(eventKey) {
     document.querySelector("." + eventKey).classList.toggle("pressed");
+    setTimeout(function () {
+        document.querySelector("." + eventKey).classList.toggle("pressed");
+
+    }, 100);
     
 }
 
